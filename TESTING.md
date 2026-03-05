@@ -12,16 +12,16 @@ I didn’t test the interface since it wasn’t included in the assignment, and 
 
 # Lecture Concepts
 
-##The Testing Pyramid
+## The Testing Pyramid
 The project has more unit tests than integration tests. Unit tests are fast and cover most of the logic.
 There are fewer integration tests because they check “end-to-end” scenarios that the components work together correctly.
 
-##Black-box vs White-box
+## Black-box vs White-box
 Unit tests are closer to white-box because I directly test internal functions (`add`, `div`) and internal state (`CalculatorState.clear()`).
 Integration tests are closer to black-box, because I simulate user input through `run_session(...)` and only check the output,
 without getting into the internal implementation.erformance, UX, stress tests) were deliberately not done due to the small scale of the task.
 
-##Functional vs Non-Functional
+## Functional vs Non-Functional
 The tests in the project are mainly functional: they check the correctness of calculations and the correctness of Clear/divide by zero behavior.
 Non-functional tests (performance, UX, stress tests) were deliberately not done due to the small scale of the task.
 
@@ -40,3 +40,4 @@ Non-functional tests (performance, UX, stress tests) were deliberately not done 
 | test_clear_resets_state                     | Unit         | Pass   |
 | test_full_user_interaction_addition         | Integration  | Pass   |
 | test_clear_after_calculation_resets_display | Integration  | Pass   |
+
